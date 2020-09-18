@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid">
+    <a name="top"></a>
+    <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
             <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +28,12 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
                         </div>
-                    </li>                
-                </ul>                
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -39,17 +41,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="modal-body">
-                <p>Modal body text goes here.</p>
+                <button type="button" class="text-dark btn btn-outline-light"><i class="fas fa-camera"></i></button>
+                <button type="button" class="text-dark btn btn-outline-light"><i class="fas fa-map-marker-alt"></i></button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
             </div>
             </div>
         </div>
@@ -98,101 +98,169 @@
             </div>
 
                 <div class="tab-pane fade" id="feed-view" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-1" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My First Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My First Photo</h6>
                             <p class="card-text">9/16</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/dog"  alt="Card image cap"/>
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card-body">   
+                            <div class="p-1">                        
+                                <p>237 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>  
+                            </div>     
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Second Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Second Photo</h6>
                             <p class="card-text">9/15</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/house"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>30 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Third Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Third Photo</h6>
                             <p class="card-text">9/14</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/paris"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>267 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Fourth Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Fourth Photo</h6>
                             <p class="card-text">9/13</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>75 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Fifth Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Fifth Photo</h6>
                             <p class="card-text">9/12</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/girl"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>300,000,000 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Sixth Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Sixth Photo</h6>
                             <p class="card-text">9/11</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/rio"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>250 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Seventh Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Seventh Photo</h6>
                             <p class="card-text">9/10</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/bird"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>2 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Eighth Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Eighth Photo</h6>
                             <p class="card-text">9/9</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/horse"  alt="Card image cap"/>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="p-1">
+                                <p>50 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>                          
+                            </div>
                         </div>
                     </div>
-                    <div class="card m-auto" style="width: 32rem;">
+                    <div class="card mx-auto my-5" style="width: 32rem;">
                         <div class="card-body d-flex justify-content-between">
-                            <h6 class="card-text">My Ninth Photo</h6>
+                            <h6 class="card-text"><a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;My Ninth Photo</h6>
                             <p class="card-text">9/8</p>
                         </div>
                         <img class="card-img-top" src="https://loremflickr.com/320/240/food"  alt="Card image cap"/>
-                        <div class="card-body">
-                            <span>3 likes</span>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+                        <div class="card-body">                        
+                            <div class="p-1">
+                                <p>2,000 likes</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="text-secondary d-flex justify-content-between">                                    
+                                    <i class="far fa-heart">&nbsp;&nbsp; Comment...</i>                          
+                                    <i class="fas fa-ellipsis-v"></i>                           
+                                </div>                                                   
+                            </div>    
                         </div>
                     </div>
                 </div>
-        </div>     
+                    
+                    </div>
+                </div>
+        </div> 
+        <div class="text-center h3">
+            <a id="topLink" href="#top"><i class="fab fa-instagram"></i></a>    
+        </div>
     </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
